@@ -1,0 +1,54 @@
+/* Global smooth font and background base */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #ffffff);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+/* Utility: Flex Center */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Remove default button focus glow */
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Responsive text utilities */
+.text-xs { font-size: 0.75rem; }
+.text-sm { font-size: 0.875rem; }
+.text-md { font-size: 1rem; }
+.text-lg { font-size: 1.25rem; }
+
+/* General button polish */
+button {
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* Scrollbar custom (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}

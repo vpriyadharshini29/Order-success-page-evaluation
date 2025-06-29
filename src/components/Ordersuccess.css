@@ -1,0 +1,62 @@
+/* Background */
+.success-bg {
+  background: radial-gradient(circle at top left, #e0f7fa, #ffffff);
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+}
+
+/* Card */
+.success-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 550px;
+  width: 100%;
+  transition: 0.5s;
+  animation: fadeIn 1s ease;
+}
+
+/* Animated check icon */
+.check-icon {
+  font-size: 4rem;
+  color: #28a745;
+  animation: scaleUp 0.7s ease-out;
+}
+
+/* Text gradient */
+.text-gradient {
+  background: linear-gradient(to right, #1d976c, #93f9b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Button hover effect */
+.glow-hover:hover {
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.5);
+  transform: translateY(-2px);
+  transition: 0.3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(0.4); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-fade {
+  animation: fadeIn 1s ease forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.7s ease forwards;
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(40px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
