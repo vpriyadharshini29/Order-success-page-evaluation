@@ -1,5 +1,5 @@
 
-import './OrderSuccess.css';
+import './Ordersuccess.css';
 
 const OrderSuccess = () => {
   const orderId = `ORD-${Date.now()}`;
